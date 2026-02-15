@@ -56,7 +56,7 @@ Elastic IP（EIP）は、AWSが提供する固定のパブリックIPアドレ�
 |------|------|------|
 | **旧インスタンスID** | 現在稼働中のEC2インスタンスID | i-0123456789abcdef0 |
 | **新インスタンスID** | 新しく作成したEC2インスタンスID | i-abcdef0123456789 |
-| **Elastic IP** | 付け替えるElastic IPアドレス | 54.123.45.67 |
+| **Elastic IP** | 付け替えるElastic IPアドレス | XXX.XXX.XXX.XXX |
 
 ### 2.3 新しいEC2インスタンスの準備
 
@@ -138,7 +138,7 @@ Elastic IPを新しいEC2に付け替えた後、PuTTYの接続設定を更新�
 3. 「Saved Sessions」から既存のセッション名を選択（例: `EC2-Production`）
 4. **「Load」**をクリック
 5. 「Host Name (or IP address)」を**新しいEC2のパブリックIP**に変更
-   - 例: `54.123.45.67` または `ec2-user@54.123.45.67`
+   - 例: `XXX.XXX.XXX.XXX` または `ec2-user@XXX.XXX.XXX.XXX`
 6. 左側の「Connection」→「SSH」→「Auth」を選択
 7. 「Private key file for authentication」が正しいキーファイル（`.ppk`）を指しているか確認
 8. 左側の「Session」に戻る
@@ -164,8 +164,8 @@ AWSからダウンロードした`.pem`ファイルをPuTTY形式（`.ppk`）に
 1. **PuTTYを起動**
 2. **「Session」**カテゴリで設定：
    - **Host Name (or IP address)**:
-     - Elastic IP使用: `54.123.45.67`
-     - またはユーザー名付き: `ec2-user@54.123.45.67`
+     - Elastic IP使用: `XXX.XXX.XXX.XXX`
+     - またはユーザー名付き: `ec2-user@XXX.XXX.XXX.XXX`
    - **Port**: `22`
    - **Connection type**: `SSH`
 3. **「Connection」→「Data」**で設定：

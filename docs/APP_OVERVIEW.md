@@ -179,7 +179,7 @@ graph TB
         end
 
         subgraph "EC2 Instance"
-            EIP[Elastic IP<br/>13.211.11.202]
+            EIP[Elastic IP<br/>XXX.XXX.XXX.XXX]
             SG[Security Group<br/>80/443/22]
 
             subgraph "Application"
@@ -226,7 +226,7 @@ graph TB
 
 #### EC2インスタンス
 - **インスタンスタイプ**: t2.micro（推奨）
-- **Elastic IP**: 13.211.11.202（固定）
+- **Elastic IP**: XXX.XXX.XXX.XXX（固定）
 - **セキュリティグループ**: HTTP(80), HTTPS(443), SSH(22)開放
 - **リージョン**: ap-southeast-2（シドニー）
 
