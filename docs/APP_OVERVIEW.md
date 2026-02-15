@@ -191,7 +191,7 @@ graph TB
 
         subgraph "S3"
             BUCKET[sample-vue-app-prod<br/>CORS有効]
-            RECORDS[records/<br/>{account}/<br/>{file}.csv]
+            RECORDS[records/<br/>&lt;account&gt;/<br/>&lt;file&gt;.csv]
         end
 
         subgraph "IAM"
